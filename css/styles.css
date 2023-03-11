@@ -53,14 +53,20 @@ ul {
     padding: 0 15px;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 /* ?----------------------HEADER---------------------- */
 
 .header {
     border-bottom: var(--color-cornflower) solid 1px;
+    padding: 24px 0;
 }
 
 .header-container {
-    padding: 24px 0;
     display: flex;
     justify-content: space-between;
 }
@@ -123,12 +129,11 @@ ul {
 /* ?----------------------HERO---------------------- */
 
 .hero-container {
-    padding: 188px 0;
-    background-color: var(--color-navy-blue);
 }
 
 .hero {
     background-color: var(--color-navy-blue);
+    padding: 188px 0;
 }
 
 .hero-title {
@@ -167,13 +172,15 @@ ul {
 
 /* ?----------------------STRATEGY---------------------- */
 
-.strategy-container {
+.strategy {
     padding: 120px 0;
 }
 
+.strategy-container {
+}
+
 .strategy-title {
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+    visibility: hidden;
 }
 
 .strategy-list {
@@ -196,8 +203,11 @@ ul {
 
 /* ?----------------------WORK---------------------- */
 
-.work-container {
+.work {
     padding-bottom: 120px;
+}
+
+.work-container {
 }
 
 .work-title {
@@ -216,17 +226,17 @@ ul {
 }
 
 .work-list-item {
-    width: calc(100% - 24px * 2) / 3;
+    width: calc((100% - 24px * 2) / 3);
 }
 
 /* ?----------------------TEAM---------------------- */
 
 .team {
     background-color: var(--color-cloud);
+    padding: 120px 0;
 }
 
 .team-container {
-    padding: 120px 0;
 }
 
 .team-title {
@@ -242,12 +252,14 @@ ul {
 .team-list {
     display: flex;
     gap: 24px;
+    justify-content: center;
 }
 
 .team-list-item {
-    background-color: white;
+    background-color: #ffffff;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+    width: calc((100% - 24px * 3) / 4);
 }
 
 .team-list-item-wrapper-text {
@@ -276,10 +288,10 @@ ul {
 
 .footer {
     background-color: var(--color-navy-blue);
+    padding: 100px 0;
 }
 
 .footer-container {
-    padding: 100px 0;
 }
 
 .logo-footer {
@@ -308,8 +320,15 @@ ul {
 
 /* ?----------------------PORTFOLIO---------------------- */
 
-.portfolio-container {
+.portfolio-section {
     padding: 96px 0 120px;
+}
+
+.portfolio-container {
+}
+
+.portfolio-title {
+    visibility: hidden;
 }
 
 .btn-list {
@@ -337,7 +356,8 @@ ul {
     background: var(--color-ocean);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    color: white;
+    color: #ffffff;
+    border-color: transparent;
 }
 
 .portfolio-list {
@@ -349,7 +369,7 @@ ul {
 }
 
 .portfolio-list-item {
-    width: calc(100% - 24px * 2) / 3;
+    width: calc((100% - 2 * 24px) / 3);
 }
 
 .portfolio-list-item-text-wrap {
